@@ -1,0 +1,288 @@
+/* ================= ROOT & RESET ================= */
+:root {
+    --bg: #f4f1ea;
+    --black: #1a1a1a;
+    --accent: #d44d2e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--black);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.serif { font-family: 'Playfair Display', serif; }
+.italic { font-style: italic; }
+
+.container { padding: 0 5%; }
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 100;
+}
+
+.nav-brand {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--black);
+    margin-left: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1;
+}
+
+.hero-sub {
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ================= GENERAL SECTION ================= */
+.section {
+    padding: 100px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.large-text {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.sub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* ================= KARYA / PROJECT ================= */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: #f6f6f6;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* ================= MEDIA (DARK) ================= */
+.dark-section {
+    background: var(--black);
+    color: var(--bg);
+    border: none;
+}
+
+.media-row {
+    display: flex;
+    gap: 30px;
+}
+
+.video-wrap,
+.image-placeholder {
+    flex: 1;
+}
+
+video,
+.side-img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+.side-img {
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.side-img:hover {
+    filter: grayscale(0%);
+}
+
+/* Audio & PDF */
+.sub-media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.audio-card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.label-small {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+/* ================= INFO ================= */
+.stats-grid-new {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-num {
+    font-size: 2.5rem;
+    color: var(--accent);
+}
+
+/* Pricing */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.price-card {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.price-card.featured {
+    background: var(--black);
+    color: var(--bg);
+}
+
+/* Timeline */
+.timeline-simple {
+    margin-top: 20px;
+}
+
+.time-item {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    border-left: 2px solid var(--accent);
+}
+
+/* ================= CONTACT ================= */
+.full-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 40px;
+}
+
+.simple-form-new {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.simple-form-new input,
+.simple-form-new textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: transparent;
+}
+
+.btn-send {
+    background: var(--black);
+    color: white;
+    padding: 12px;
+    border: none;
+}
+
+/* ================= FOOTER ================= */
+.footer-bottom {
+    margin-top: 80px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .grid-layout,
+    .full-contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .media-row {
+        flex-direction: column;
+    }
+}

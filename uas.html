@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Archive — [Geraldo]</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="nav-brand">Portofolio</a>
+        <div class="nav-links">
+            <a href="#profile">Profil</a>
+            <a href="#karya">Karya</a>
+            <a href="#info">Informasi</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="reveal">Selamat <br> <i>Datang di</i> Portfolio Geraldo</h1>
+            <p class="hero-sub">Dibuat oleh [Geraldo] — NIM [251011700749]</p>
+        </div>
+    </section>
+
+    <section id="profile" class="section">
+        <div class="container">
+            <div class="grid-layout">
+                <div class="section-label">01/ Profil</div>
+                <div class="content">
+                    <h2 class="serif">Tentang Saya</h2>
+                    <p class="large-text">Saya adalah mahasiswa kelas [01SIFP012] yang fokus pada pengembangan antarmuka digital yang intuitif dan estetik.</p>
+                    <div class="sub-grid">
+                        <div>
+                            <h4>Keahlian</h4>
+                            <p>Interface Design, HTML/CSS, Content Writing</p>
+                        </div>
+                        <div>
+                            <h4>Pendidikan</h4>
+                            <p>S1 Sistem Informasi, Universitas Pamulang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="karya" class="section">
+        <div class="container">
+            <div class="grid-layout">
+                <div class="section-label">02/ Karya</div>
+                <div class="content">
+    
+                    <h2 class="serif">Karya & Project</h2>
+                    <p class="large-text">
+                        Beberapa website dan karya digital yang pernah saya buat sebagai bagian dari proses belajar dan pengembangan kemampuan.
+                    </p>
+    
+                    <div class="project-grid">
+    
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <img src="portofolio.PNG" alt="Project Website Portfolio">
+                            <div class="project-info">
+                                <h4>Website Portfolio Pribadi</h4>
+                                <p>Website portfolio responsif menggunakan HTML, CSS, dan JavaScript.</p>
+                                <a href="#" target="_blank">Lihat Project ↗</a>
+                            </div>
+                        </div>
+    
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <img src="pizza.PNG" alt="Landing Page Produk">
+                            <div class="project-info">
+                                <h4>Landing Page Produk</h4>
+                                <p>Desain landing page modern untuk promosi produk UMKM.</p>
+                                <a href="#" target="_blank">Lihat Project ↗</a>
+                            </div>
+                        </div>
+    
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <img src="landing.PNG" alt="Website Company Profile">
+                            <div class="project-info">
+                                <h4>Company Profile</h4>
+                                <p>Website company profile sederhana dan profesional.</p>
+                                <a href="#" target="_blank">Lihat Project ↗</a>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="media" class="section dark-section">
+        <div class="container">
+            <div class="grid-layout">
+                <div class="section-label">02/ Media</div>
+                <div class="content">
+                    <div class="media-stack">
+                        <h3 class="serif italic" style="margin-bottom: 20px;">Visual, Audio & Document Archive</h3>
+                        
+                        <div class="media-row">
+                            <div class="video-wrap">
+                                <video src="mantap.mp4" controls></video>
+                            </div>
+                        
+                            <div class="image-placeholder">
+                                <img src="11.jpg" class="side-img" alt="Visual Work">
+                            </div>
+                        </div>
+                        
+                        <div class="sub-media-grid">
+                            <!-- Elemen Audio yang Sudah Ada -->
+                            <div class="audio-card">
+                                <p class="label-small">Audio Player</p>
+                                <p class="audio-title"><i>Vibe Session:</i> Kenangan Manis</p>
+                                <audio controls>
+                                    <source src="kenangan manis.mp3">
+                                </audio>
+                            </div>
+
+                            <!-- PENAMBAHAN ELEMEN DOKUMEN PDF -->
+                            <div class="archive-container" style="display: flex; flex-direction: column; gap: 20px; max-width: 400px;">
+
+                                <div class="card pdf-card" style="padding: 20px; border: 1px solid #333; border-radius: 8px; background: #1a1a1a;">
+                                    <p class="label-small" style="font-size: 0.7rem; color: #888; text-transform: uppercase; margin-bottom: 5px;">Document Archive</p>
+                                    <p class="card-title" style="margin: 0; font-weight: bold; color: #fff;"><i>Curriculum Vitae:</i> Geraldo 2025</p>
+                                    
+                                    <div class="pdf-action-wrapper" style="margin-top: 15px; display: flex; align-items: center; gap: 15px;">
+                                        <a href="uas.pdf" target="_blank" class="btn-pdf-view" style="text-decoration: none; color: #fff; background: #444; padding: 8px 15px; border-radius: 4px; font-size: 0.8rem;">Pratinjau PDF</a>
+                                        <a href="uas.pdf" download class="btn-pdf-download" style="text-decoration: underline; color: #ccc; font-size: 0.8rem;">Unduh File</a>
+                                    </div>
+                                    <p style="font-size: 0.7rem; color: #666; margin-top: 10px;">*File format: PDF (2.5 MB)</p>
+                                </div>
+                            
+                            
+                            </div>
+                            <!-- SELESAI PENAMBAHAN -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="section">
+        <div class="container">
+            <div class="grid-layout">
+                <div class="section-label">03/ Informasi</div>
+                <div class="content">
+                    
+                    <div class="stats-grid-new">
+                        <div class="stat-box">
+                            <span class="stat-num">12+</span>
+                            <p class="label-small">Proyek Selesai</p>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">10+</span>
+                            <p class="label-small">Klien Puas</p>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">02</span>
+                            <p class="label-small">Tahun Pengalaman</p>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">98%</span>
+                            <p class="label-small">Tingkat Kepuasan</p>
+                        </div>
+                    </div>
+    
+                    <div class="info-block">
+                        <h3 class="serif italic">Layanan & Investasi</h3>
+                        <div class="pricing-grid">
+                            <div class="price-card">
+                                <h4>Basic</h4>
+                                <p class="price">Rp 500rb</p>
+                                <ul>
+                                    <li>Landing Page</li>
+                                    <li>Responsive Design</li>
+                                    <li>1x Revisi</li>
+                                </ul>
+                            </div>
+                            <div class="price-card featured">
+                                <h4>Pro</h4>
+                                <p class="price">Rp 1.5jt</p>
+                                <ul>
+                                    <li>Multi-page Web</li>
+                                    <li>SEO Optimization</li>
+                                    <li>Unlimited Revisi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-block">
+                        <h3 class="serif italic">Timeline</h3>
+                        <div class="timeline-simple">
+                            <div class="time-item">
+                                <span class="year">2024</span>
+                                <p>Fokus pada Pengembangan Frontend & UI Design</p>
+                            </div>
+                            <div class="time-item">
+                                <span class="year">2023</span>
+                                <p>Memulai Studi S1 Sistem Informasi UNPAM</p>
+                            </div>
+                            <div class="time-item">
+                                <span class="year">2022</span>
+                                <p>Sertifikasi Web Dasar & Desain Grafis</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-block">
+                        <h3 class="serif italic">Pertanyaan Umum</h3>
+                        <div class="faq-accordion">
+                            <details>
+                                <summary>Bagaimana cara memulai proyek?</summary>
+                                <p>Anda bisa menghubungi saya melalui WhatsApp atau Email untuk konsultasi awal gratis.</p>
+                            </details>
+                            <details>
+                                <summary>Apakah revisi dikenakan biaya?</summary>
+                                <p>Revisi tambahan di luar paket akan dikenakan biaya sesuai kesepakatan.</p>
+                            </details>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="section footer">
+        <div class="container">
+            <div class="grid-layout">
+                <div class="section-label">04/ Hubungi</div>
+                <div class="content">
+                    <h2 class="serif italic" style="font-size: 2rem; margin-bottom: 40px;">Mari Bicara.</h2>
+                    
+                    <div class="full-contact-grid">
+                        <div class="contact-col">
+                            <div class="info-group">
+                                <span class="label-small">Informasi</span>
+                                <p>📧 geraldo@email.com</p>
+                                <p>📞 +62 812-3456-7890</p>
+                                <p>📍 Pamulang, Tangerang Selatan</p>
+                                <p>⏰ Senin - Jumat: 09:00 - 17:00</p>
+                            </div>
+                            
+                            <div class="faq-group">
+                                <span class="label-small">Pertanyaan Umum</span>
+                                <details>
+                                    <summary>Apakah menerima freelance?</summary>
+                                    <p>Ya, saya tersedia untuk proyek pengembangan web.</p>
+                                </details>
+                                <details>
+                                    <summary>Berapa lama pengerjaan?</summary>
+                                    <p>Tergantung kompleksitas, rata-rata 1-2 minggu.</p>
+                                </details>
+                            </div>
+                        </div>
+    
+                        <div class="contact-col">
+                            <span class="label-small">Kirim Pesan</span>
+                            <form class="simple-form-new">
+                                <input type="text" placeholder="Nama Lengkap" required>
+                                <input type="email" placeholder="Email Anda" required>
+                                <input type="text" placeholder="Subjek">
+                                <textarea placeholder="Pesan Anda" rows="4"></textarea>
+                                <button type="submit" class="btn-send">Kirim Pesan ↗</button>
+                            </form>
+                        </div>
+    
+                        <div class="contact-col">
+                            <span class="label-small">Lokasi Kami</span>
+                            <div class="maps-box">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6708339787056!2d107.0027954737832!3d-6.436306762936794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6995f764366809%3A0x874b4e0b7c00402b!2sPuri%20Harmoni%206!5e0!3m2!1sid!2sid!4v1767100709705!5m2!1sid!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            
+                            <div class="social-links-new">
+                                <span class="label-small">Ikuti Saya</span>
+                                <div class="social-icons-flex">
+                                    <a href="https://www.instagram.com/gerald_1006?igsh=MXVkcWF2eWV5Ymsxcg==">IG</a> <a href="https://www.linkedin.com/in/aldo-alkahfi-6bb97a266?trk=contact-info">LI</a> <a href="#">FB</a> <a href="#">TW</a> <a href="https://github.com/aldobaik">GH</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="footer-bottom">
+                        <p>© 2024 Geraldo — S1 Sistem Informasi UNPAM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
